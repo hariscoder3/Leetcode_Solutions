@@ -1,8 +1,7 @@
-class Solution(object):
-    def containsDuplicate(self, nums): 
-        mydict = {}
-        for i in nums:
-            if i in mydict:
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nums.sort()
+        for i in range(len(nums)-1):
+            if nums[i]==nums[i+1]:
                 return True
-            mydict[i] = True
         return False
