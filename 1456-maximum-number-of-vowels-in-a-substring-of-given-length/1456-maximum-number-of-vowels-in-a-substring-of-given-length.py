@@ -2,7 +2,6 @@ class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         max_vowels = 0
         count = 0
-        k_count = 0
         for i,char in enumerate(s):
             if char in "aeiou":
                 count+=1
